@@ -1,0 +1,7 @@
+name = "og-image-generator"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Routes will be configured in Cloudflare dashboard
+# og.iammatthias.com/* -> this worker
