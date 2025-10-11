@@ -74,35 +74,33 @@ export default {
       html = `
         <div style="
           display: flex;
+          flex-direction: column;
           width: 1200px;
           height: 628px;
           background: ${COLORS.background};
           border: 2px solid ${COLORS.accent};
           padding: 60px;
           box-sizing: border-box;
+          font-family: 'New York', serif;
         ">
           <div style="
             display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            justify-content: space-between;
-            font-family: 'New York', serif;
+            font-size: 42px;
+            line-height: 1;
+            color: ${COLORS.foreground};
+            opacity: 0.8;
+            margin-bottom: auto;
           ">
-            <div style="
-              font-size: 42px;
-              color: ${COLORS.foreground};
-              opacity: 0.8;
-            ">
-              @iammatthias
-            </div>
-            <div style="
-              font-size: 84px;
-              color: ${COLORS.foreground};
-              text-transform: capitalize;
-            ">
-              ${path}
-            </div>
+            @iammatthias
+          </div>
+          <div style="
+            display: flex;
+            font-size: 84px;
+            line-height: 1;
+            color: ${COLORS.foreground};
+            text-transform: capitalize;
+          ">
+            ${path}
           </div>
         </div>
       `;
@@ -111,46 +109,46 @@ export default {
       html = `
         <div style="
           display: flex;
+          flex-direction: column;
           width: 1200px;
           height: 628px;
           background: ${COLORS.background};
           border: 2px solid ${COLORS.accent};
           padding: 60px;
           box-sizing: border-box;
+          font-family: 'New York', serif;
         ">
           <div style="
             display: flex;
+            font-size: 42px;
+            line-height: 1;
+            color: ${COLORS.foreground};
+            opacity: 0.8;
+            margin-bottom: auto;
+          ">
+            @iammatthias
+          </div>
+          <div style="
+            display: flex;
             flex-direction: column;
-            width: 100%;
-            height: 100%;
-            justify-content: space-between;
-            font-family: 'New York', serif;
+            gap: 16px;
           ">
             <div style="
-              font-size: 42px;
-              color: ${COLORS.foreground};
-              opacity: 0.8;
+              display: flex;
+              font-size: 28px;
+              line-height: 1;
+              color: ${COLORS.accent};
+              text-transform: capitalize;
             ">
-              @iammatthias
+              ${path}
             </div>
             <div style="
               display: flex;
-              flex-direction: column;
-              gap: 16px;
+              font-size: 64px;
+              line-height: 1;
+              color: ${COLORS.foreground};
             ">
-              <div style="
-                font-size: 28px;
-                color: ${COLORS.accent};
-                text-transform: capitalize;
-              ">
-                ${path}
-              </div>
-              <div style="
-                font-size: 64px;
-                color: ${COLORS.foreground};
-              ">
-                ${title}
-              </div>
+              ${title}
             </div>
           </div>
         </div>
