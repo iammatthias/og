@@ -6,7 +6,7 @@ workers_dev = false
 
 [[rules]]
 type = "Data"
-globs = ["**/*.ttf"]
+globs = ["**/*.ttf", "**/*.woff", "**/*.png"]
 fallthrough = false
 
 # Routes will be configured in Cloudflare dashboard
