@@ -78,7 +78,9 @@ export default {
     let accentSrc: string;
     if (AZULEJOS.length > 0) {
       const tile = AZULEJOS[seed % AZULEJOS.length];
-      accentSrc = `data:image/png;base64,${bytesToBase64(tile)}`;
+      // Snapshot script writes JPEGs; bytes carry their own header so
+      // the MIME type is fixed regardless of file extension.
+      accentSrc = `data:image/jpeg;base64,${bytesToBase64(tile)}`;
     } else {
       // 1×1 transparent PNG fallback. The strip's background color
       // shows through, so the layout still reads even without
