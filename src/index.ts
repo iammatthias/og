@@ -7,11 +7,11 @@ import { AZULEJOS } from "./azulejos";
  * Values are sRGB hex; SVG/Satori don't accept display-p3 directly.
  */
 const COLORS = {
-  bg: "#f1ebdc", // warm cream paper (--color-bg)
-  fg: "#1c1a16", // warm near-black
-  muted: "#7a7368",
-  border: "#e6dfd1",
-  accent: "#4a6b8a", // dusty blue
+  bg: "#f5f2e9", // ivory paper (--color-bg)
+  fg: "#20293a", // cobalt-black engraving ink
+  muted: "#5f6a7a",
+  border: "#dfddd7",
+  accent: "#1e4d9b", // deep cobalt
 };
 
 /* ───────── seeded RNG + hash ───────── */
